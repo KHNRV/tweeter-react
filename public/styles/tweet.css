@@ -1,0 +1,88 @@
+.tweets-container {
+  margin-top: 75px;
+}
+
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: 5px solid #1f1f1f;
+}
+
+article.tweet > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+article.tweet > header > .user-handle {
+  visibility: hidden;
+}
+
+article.tweet > header > .user-meta {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+article.tweet > header > .user-meta > img {
+  display: block;
+  height: 50%;
+  width: auto;
+  margin-right: 15px;
+}
+
+article.tweet > header > .user-meta > .username {
+  white-space: nowrap;
+  font-size: xx-large;
+}
+
+article.tweet > main {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  word-break: break-word;
+  align-items: flex-start;
+  text-align: left;
+}
+
+article.tweet > footer {
+  border-top: 5px solid #1f1f1f;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article.tweet > footer > .action-bar {
+  align-items: center;
+  visibility: hidden;
+}
+
+article.tweet > footer > .action-bar > img {
+  height: 15px;
+  width: auto;
+}
+
+article.tweet > footer > .date {
+  font-size: medium;
+}
+
+article.tweet:hover {
+  box-shadow: 5px 10px #4056a1;
+  filter: drop-shadow(0.2px 0.2px 0 black);
+  -webkit-filter: drop-shadow(0.2px 0.2px 0 black);
+}
+
+article.tweet:hover > header > .user-handle {
+  visibility: visible;
+}
+
+article.tweet:hover > footer > .action-bar {
+  visibility: visible;
+}

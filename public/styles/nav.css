@@ -1,0 +1,44 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: white;
+  display: flex;
+  padding: 1.5em;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav > .to-new-tweet > .arrow-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+nav > .to-new-tweet > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav > .logo {
+  font-family: "Bungee", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  nav > .logo {
+    font-size: 75%;
+  }
+  nav > .to-new-tweet > a {
+    font-size: 75%;
+  }
+  nav > .to-new-tweet > .arrow-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+} ;
